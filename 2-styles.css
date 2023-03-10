@@ -225,3 +225,121 @@ h3 {
     }
 }
 
+/* What we do
+   ============================= */
+main {
+    width: 100%;
+    position: relative;
+}
+main p {
+    text-align: center;
+    width: 65%;
+    margin: 2rem auto;
+    line-height: 1.5;
+    font-size: var(--font-medium);
+    font-family: var(--font);
+}
+main .what_we_do {
+    padding: 4rem;
+    flex-wrap: wrap;
+}
+
+main .icons {
+    width: 100%;
+    display: grid;
+    font-family: var(--font);
+    margin: 2rem 0;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100%;
+    text-align: center;
+}
+
+main .icons .icon_section {
+    margin: 0.5rem;
+}
+
+main .icons .icon_section p {
+    width: 100%;
+    margin: 0;
+    font-size: 14px;
+    padding: 0;
+}
+
+main .icons .icon_section h2 {
+    font-family: var(--font);
+    font-size: var(--font-medium);
+}
+
+@media (max-width: 480px) {
+    main .what_we_do {
+        padding: 4rem 2.5rem;
+    }
+    main p {
+        width: 100%;
+    }
+    main .icons {
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 25% 25% 25%;
+    }
+    main .icons .icon_section p {
+        width: 70%;
+        margin: auto;
+    }
+}
+
+/* Icons
+   ============================= */
+.holberton_school-icon-ic_sound,
+.holberton_school-icon-ic_video,
+.holberton_school-icon-ic_music,
+.holberton_school-icon-ic_hearing {
+    color: var(--color-red);
+    font-size: 46px;
+}
+
+.section-title {
+    width: 100%;
+    margin: auto;
+    font-family: var(--font);
+    font-size: var(--font-large);
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* Results
+   ============================= */
+.results {
+    color: white;
+    background-image: url("images/headphones_hero_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.results {
+    padding: 6rem 4rem;
+}
+.results .icons .icon_section {
+    height: 10rem;
+    padding: 0;
+    position: relative;
+    background-image: url("images/pentagone.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.results .icons .icon_section h1 {
+    position: relative;
+    top: 15%;
+    font-size: var(--font-large);
+}
+.results .icons .icon_section p {
+    position: relative;
+    top: 12%;
+}
+/** Media Queries**/
+
+@media (max-width: 480px) {
+    .results {
+        background-position: 50%;
+    }
+}
